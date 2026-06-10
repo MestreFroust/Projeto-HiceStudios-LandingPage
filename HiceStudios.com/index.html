@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HICE Studios</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <img class="header-logo" src="assets/img/hicestudio.png" alt="HICE Studios logo">
+        <nav class="header-nav" aria-label="Menu principal">
+            <a href="Comunity.html">Comunidade</a>
+            <a href="catalog.html">Catálogo</a>
+            <a href="support.html">Suporte</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="video-wrapper">
+            <video class="hero-video" controls muted preload="metadata" playsinline>
+                <source src="assets/img/video.mp4" type="video/mp4">
+                Seu navegador não suporta este vídeo.
+            </video>
+        </section>
+
+        <section class="feature-section">
+            <h1>HICE Studios, criamos experiências únicas para jogadores de todos os cantos.</h1>
+            <p>Nosso objetivo é ampliar as fronteiras do que os jogos podem entregar — com histórias, estilo e gameplay que encantam e conectam.</p>
+            <p>Perfeito para quem quer explorar um universo criativo, competitivo e cheio de emoção.</p>
+            <a class="feature-link" href="catalog.html">Veja nosso catálogo</a>
+        </section>
+
+ 
+
+        <section class="category-title-section">
+            <h2>CATÁLOGO</h2>
+        </section>
+
+        <section class="pokedex">
+            
+        <div class="pokemon-card">
+            <img src="assets/img/bf4logo.png" alt="Battlefield 4">
+            <a>Battlefield 4</a>
+            <span>Oct 29, 2013</span>
+        </div>
+        <div class="pokemon-card">
+            <img src="assets/img/bf3.png" alt="Battlefield 3">
+            <a >Battlefield 3</a>
+            <span> Oct 25, 2011</span>
+        </div>
+        <div class="pokemon-card">
+            <img src="assets/img/bf1.png" alt="Battlefield 1">
+            <a >Battlefield 1</a>
+            <span>Oct 21, 2016</span>
+        </div>
+        <div class="pokemon-card">
+            <img src="assets/img/bf42.png" alt="Battlefield 2042">
+            <a >Battlefield 2042</a>
+            <span>Nov 19, 2021</span>
+        </div>
+        <div class="pokemon-card">
+            <img src="assets/img/batt5.webp" alt="Battlefield 5">
+            <a>Battlefield 5</a>
+            <span> Oct 22, 2018</span>
+        </div>
+        <div class="pokemon-card">
+            <img src="assets/img/bf6.png" alt="Battlefield 6">
+            <a>Battlefield 6</a>
+            <span>Oct 10, 2025</span>
+        </div>
+
+        <div class="pokemon-card">
+            <img src="assets/img/bfbad.png" alt="Battlefield Bad Company 2">
+            <a>Battlefield Bad Company 2</a>
+            <span>Mar 2, 2010</span>
+        </div>
+        <div class="pokemon-card">
+            <img src="assets/img/bf2.png" alt="Battlefield 2">
+            <a>Battlefield 2</a>
+            <span>Jun 21, 2005</span>
+        </div>
+      
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 HICE Studios. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.querySelector('.hero-video');
+            if (video) {
+                video.muted = true;
+                video.play().catch(function () {
+                    // se o navegador bloquear autoplay, deixa o usuário iniciar
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

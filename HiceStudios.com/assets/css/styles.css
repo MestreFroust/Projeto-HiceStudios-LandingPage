@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --header-logo-height: 150px;
+    --header-logo-max-width: 260px;
+}
+
+body {
+    background-color: #1d1b1b;
+    color: #333;
+}
+
+.pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #131313;
+    padding: 16px;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.35);
+}
+
+.pokemon-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    display: block;
+}
+
+.pokemon-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.pokemon-detail img {
+    width: 200px;
+    height: 200px;
+}
+
+.pokemon-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pokemon-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.pokemon-info p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #AEAEAE;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .pokemon-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+.imgheader{
+    height: 190px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 90px;
+    background-color: #1d1b1b;
+    padding: 16px 24px;
+    border: none;
+}
+
+.header-logo {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+    height: var(--header-logo-height);
+    max-width: var(--header-logo-max-width);
+    object-fit: contain;
+}
+
+.header-nav {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav a {
+    color: #b1afaf;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    font-size: 1.3rem;
+    transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.header-nav a:hover,
+.header-nav a:focus-visible {
+    transform: scale(1.1);
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+.hero-video {
+    width: 100%;
+    max-width: 1700px;
+    height: auto;
+    margin: 0 auto 24px auto;
+    display: block;
+    background-color: #000;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.feature-section {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto 32px auto;
+    padding: 32px 28px;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-section h1 {
+    color: #e54a1a;
+    font-size: 2.4rem;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.feature-section p {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4d4d4d;
+    max-width: 900px;
+}
+
+.feature-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #e54a1a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.feature-link:hover {
+    text-decoration: underline;
+}
+
+.category-title-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 32px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.category-title-section h2 {
+    color: #e54a1a;
+    font-size: 3rem;
+    letter-spacing: 0.16em;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-nav a {
+        font-size: 0.95rem;
+    }
+}
+.pokemon-card a {
+   color: #ffffff;
+   margin-top: 14px;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   font-size: 1rem;
+}
+.pokemon-card span {
+   color: #b1b1b1;
+   font-size: 0.95rem;
+   margin-top: 8px;
+}
+.pokemon-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}

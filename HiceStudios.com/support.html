@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #101010;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+        .top {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .top h1 {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+            color: #ff8c00;
+        }
+        .top p {
+            max-width: 720px;
+            margin: 0 auto;
+            color: #cccccc;
+            line-height: 1.8;
+        }
+        .support-box {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: 1fr;
+        }
+        .info {
+            background: #161616;
+            border: 1px solid rgba(255, 140, 0, 0.14);
+            border-radius: 20px;
+            padding: 24px;
+        }
+        .info h2 {
+            margin: 0 0 12px;
+            font-size: 1.25rem;
+        }
+        .info p {
+            margin: 0;
+            color: #bbb;
+            line-height: 1.7;
+        }
+        .form-box {
+            background: #161616;
+            border: 1px solid rgba(255, 140, 0, 0.14);
+            border-radius: 20px;
+            padding: 24px;
+        }
+        .form-box label {
+            display: block;
+            margin-bottom: 12px;
+            color: #ddd;
+            font-size: 0.95rem;
+        }
+        .form-box input,
+        .form-box textarea {
+            width: 100%;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 12px;
+            background: #0f0f0f;
+            color: #f5f5f5;
+            font-size: 1rem;
+            margin-bottom: 18px;
+        }
+        .form-box textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+        .form-box button {
+            background: #ff8c00;
+            border: none;
+            color: #ffffff;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .form-box button:hover {
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="top">
+            <h1>Suporte HICE</h1>
+            <p>Se precisar de ajuda, preencha o formulário abaixo. Nossa equipe receberá sua mensagem e responderá pelo e-mail da HICE Studios.</p>
+        </div>
+
+        <div class="support-box">
+            <div class="info">
+                <h2>Como funciona</h2>
+                <p>Envie sua dúvida ou sugestão e aguarde nosso retorno. Use este canal para relatar problemas, pedir suporte ou sugerir melhorias.</p>
+            </div>
+
+            <div class="form-box">
+                <form action="mailto:contato@hicestudios.com" method="post" enctype="text/plain">
+                    <label for="name">Seu nome</label>
+                    <input type="text" id="name" name="Nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">Seu e-mail</label>
+                    <input type="email" id="email" name="Email" placeholder="seu@email.com" required>
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="Mensagem" placeholder="Conte-nos o que aconteceu" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
